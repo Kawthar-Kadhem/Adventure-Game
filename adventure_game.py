@@ -56,6 +56,7 @@ def check(rumor, option):
             print_pause("\nbut your your voice wasn't hearable beacuse of" + option + ".")
             print_pause("\nYou Regret it later as you find out just before the bus move it is a pregnant women that was in pain")
             play_again()
+            play_game()
 
 
 def scenario(rumor, option):
