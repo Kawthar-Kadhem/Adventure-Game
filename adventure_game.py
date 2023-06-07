@@ -16,7 +16,6 @@ def intro(rumor, option):
     print_pause("you tride to see the person face but he/she is giving you his/her back \n")
 
 
-
 def move(rumor, option):
     if "person" in rumor:
         print_pause("\nYou took a glance to this person")
@@ -25,43 +24,38 @@ def move(rumor, option):
                     )
         print_pause("\nThe bus has arrived and you took it to go home.\n")
     else:
-        print_pause("\nAlthough you descide to stay in your place but you got curiouse so you decided to walk out of the station")
-        print_pause("\nwhile you were walking, the person took steps further from you")
-        print_pause("\nyou stopped once you noticed the move ")
-        print_pause("\nYou heard a soft voice whispering")
-        print_pause("\nDon't try to come near, it is not good to you ")
-        print_pause("\nSo you went back to the station in fear\n")
+        print_pause('\nAlthough you descide to stay in your place but you got curiouse so you decided to walk out of the station'
+                    "\nwhile you were walking, the person took steps further from you"
+                    '\nyou stopped once you noticed the move '
+                    "\nYou heard a soft voice whispering"
+                    "\nDon't try to come near, it is not good to you"
+                    "\nSo you went back to the station in fear\n" )
         
         play_again()
-   
 
 
 def check(rumor, option):
     print_pause("\nYou went close to the person to check.")
     print_pause("\nWhile you were walking it started to" + option + "")
     print_pause("\nThe " + option + " slowed your walking as it started heavy\n")
-   
     while True:
-        choice2 = input("Would you like to (s) shout out or (t) "
-                        "turn back?")
+        choice2 = input("(Would you like to (s) shout out or (t)  turn back?)\n")
         if choice2 == "s":
-            if "s" in choice2:
-                print_pause("\nwhile it kept " + option + " you shouted out loud HELLO! "
-                            "do you need any help?")
-                print_pause("\nThe person turned out to you "
-                            "without talking" )
-                print_pause("\nBut the " + option + "slowly become lighter"
-                            "so you kept on moving toward him/her")
-                print_pause("\nYou reach where he'she was standing but " + option +
-                            ". started to pour heavy again that your scream wasn't heard at all\n")
-            
-        if choice2 == "t":
+            print_pause("\nwhile it kept " + option + " you shouted out loud HELLO! "
+                        "do you need any help?")
+            print_pause("\nThe person turned out to you "
+                        "without talking" )
+            print_pause("\nBut the " + option + "slowly become lighter"
+                        "so you kept on moving toward him/her")
+            print_pause("\nYou reach where he'she was standing but " + option +
+                        ". started to pour heavy again that your scream wasn't heard at all\n")
+            break
+                
+        elif choice2 == "t": 
             print_pause("\nYou tride to shout before turning back")
             print_pause("\nbut your your voice wasn't hearable beacuse of" + option + ".")
             print_pause("\nYou Regret it later as you find out just before the bus move it is a pregnant women that was in pain")
-        play_again()
-
-            
+            play_again()
 
 
 def scenario(rumor, option):
